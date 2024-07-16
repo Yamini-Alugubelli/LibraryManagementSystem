@@ -19,7 +19,7 @@ namespace LibraryManagementSystem
     public partial class updateBooks : Form
     {
         MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=libraryManagementSystem");
-        
+
         // Initializing update books window
         public updateBooks()
         {
@@ -213,6 +213,9 @@ namespace LibraryManagementSystem
             this.Hide();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }

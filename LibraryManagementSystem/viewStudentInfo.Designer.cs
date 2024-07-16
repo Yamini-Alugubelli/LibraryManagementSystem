@@ -51,6 +51,8 @@
             clearBtn = new Button();
             searchBtn = new Button();
             label4 = new Label();
+            button2 = new Button();
+            button1 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -105,7 +107,9 @@
             // panel2
             // 
             panel2.BackColor = SystemColors.GradientInactiveCaption;
+            panel2.Controls.Add(button2);
             panel2.Controls.Add(addBooksBtn);
+            panel2.Controls.Add(button1);
             panel2.Controls.Add(button5);
             panel2.Controls.Add(viewBooksBtn);
             panel2.Controls.Add(addStudentBtn);
@@ -120,7 +124,7 @@
             // 
             addBooksBtn.BackColor = SystemColors.GradientInactiveCaption;
             addBooksBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addBooksBtn.Location = new Point(12, 32);
+            addBooksBtn.Location = new Point(12, 16);
             addBooksBtn.Name = "addBooksBtn";
             addBooksBtn.Size = new Size(170, 43);
             addBooksBtn.TabIndex = 13;
@@ -133,7 +137,7 @@
             button5.BackColor = Color.SteelBlue;
             button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button5.ForeColor = SystemColors.ButtonHighlight;
-            button5.Location = new Point(12, 293);
+            button5.Location = new Point(12, 212);
             button5.Name = "button5";
             button5.Size = new Size(170, 43);
             button5.TabIndex = 12;
@@ -144,7 +148,7 @@
             // 
             viewBooksBtn.BackColor = SystemColors.GradientInactiveCaption;
             viewBooksBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            viewBooksBtn.Location = new Point(12, 96);
+            viewBooksBtn.Location = new Point(12, 65);
             viewBooksBtn.Name = "viewBooksBtn";
             viewBooksBtn.Size = new Size(170, 43);
             viewBooksBtn.TabIndex = 11;
@@ -156,7 +160,7 @@
             // 
             addStudentBtn.BackColor = SystemColors.GradientInactiveCaption;
             addStudentBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            addStudentBtn.Location = new Point(12, 225);
+            addStudentBtn.Location = new Point(12, 163);
             addStudentBtn.Name = "addStudentBtn";
             addStudentBtn.Size = new Size(170, 43);
             addStudentBtn.TabIndex = 10;
@@ -168,7 +172,7 @@
             // 
             issueBooksBtn.BackColor = SystemColors.GradientInactiveCaption;
             issueBooksBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            issueBooksBtn.Location = new Point(12, 162);
+            issueBooksBtn.Location = new Point(12, 114);
             issueBooksBtn.Name = "issueBooksBtn";
             issueBooksBtn.Size = new Size(170, 43);
             issueBooksBtn.TabIndex = 9;
@@ -180,7 +184,7 @@
             // 
             exitBtn.BackColor = Color.AliceBlue;
             exitBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            exitBtn.Location = new Point(12, 358);
+            exitBtn.Location = new Point(12, 371);
             exitBtn.Name = "exitBtn";
             exitBtn.Size = new Size(170, 43);
             exitBtn.TabIndex = 7;
@@ -301,6 +305,28 @@
             label4.TabIndex = 8;
             label4.Text = "Enrollment No :";
             // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.GradientInactiveCaption;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(12, 310);
+            button2.Name = "button2";
+            button2.Size = new Size(170, 55);
+            button2.TabIndex = 14;
+            button2.Text = "Complete Book Details";
+            button2.UseVisualStyleBackColor = false;
+            // 
+            // button1
+            // 
+            button1.BackColor = SystemColors.GradientInactiveCaption;
+            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button1.Location = new Point(12, 261);
+            button1.Name = "button1";
+            button1.Size = new Size(170, 43);
+            button1.TabIndex = 15;
+            button1.Text = "Return Book";
+            button1.UseVisualStyleBackColor = false;
+            // 
             // viewStudentInfo
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -351,5 +377,7 @@
         private Button button5;
         private DataGridView dataGridView1;
         private Button updateBtn;
+        private Button button2;
+        private Button button1;
     }
 }

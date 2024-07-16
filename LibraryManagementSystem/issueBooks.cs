@@ -172,5 +172,9 @@ namespace LibraryManagementSystem
             this.Hide();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
