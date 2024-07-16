@@ -176,5 +176,10 @@ namespace LibraryManagementSystem
         {
 
         }
+
+        private void issueBooks_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

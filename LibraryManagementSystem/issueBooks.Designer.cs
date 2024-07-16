@@ -35,6 +35,8 @@
             label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
+            button3 = new Button();
+            button2 = new Button();
             viewStudentInfoBtn = new Button();
             addStudentsBtn = new Button();
             addBooksBtn = new Button();
@@ -63,8 +65,6 @@
             label8 = new Label();
             label5 = new Label();
             label4 = new Label();
-            button2 = new Button();
-            button3 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -131,6 +131,28 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(195, 417);
             panel2.TabIndex = 1;
+            // 
+            // button3
+            // 
+            button3.BackColor = SystemColors.GradientInactiveCaption;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(12, 300);
+            button3.Name = "button3";
+            button3.Size = new Size(170, 55);
+            button3.TabIndex = 14;
+            button3.Text = "Complete Book Details";
+            button3.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.GradientInactiveCaption;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(12, 251);
+            button2.Name = "button2";
+            button2.Size = new Size(170, 43);
+            button2.TabIndex = 13;
+            button2.Text = "Return Book";
+            button2.UseVisualStyleBackColor = false;
             // 
             // viewStudentInfoBtn
             // 
@@ -431,28 +453,6 @@
             label4.TabIndex = 8;
             label4.Text = "Enter Student Enrollment No :";
             // 
-            // button2
-            // 
-            button2.BackColor = SystemColors.GradientInactiveCaption;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(12, 251);
-            button2.Name = "button2";
-            button2.Size = new Size(170, 43);
-            button2.TabIndex = 13;
-            button2.Text = "Return Book";
-            button2.UseVisualStyleBackColor = false;
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.GradientInactiveCaption;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(12, 300);
-            button3.Name = "button3";
-            button3.Size = new Size(170, 55);
-            button3.TabIndex = 14;
-            button3.Text = "Complete Book Details";
-            button3.UseVisualStyleBackColor = false;
-            // 
             // issueBooks
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -468,6 +468,7 @@
             Name = "issueBooks";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "issueBooks Page";
+            Load += issueBooks_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
