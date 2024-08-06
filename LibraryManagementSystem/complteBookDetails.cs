@@ -20,11 +20,19 @@ namespace LibraryManagementSystem
             try
             {
                 con.Open();
-                string query = "SELECT * FROM book";
+                string query = "SELECT i.enrollment_No,i.ISBN,i.Issue_Date,i.is_returned,b.book_name FROM issuebook i INNER join book b on i.ISBN=b.ISBN where  is_returned = 0";
                 MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
                 DataTable dataTable = new DataTable();
                 adapter.Fill(dataTable);
-                booksDataGridView.DataSource = dataTable;
+                dataGridView1.DataSource = dataTable;
+
+                string returnedQuery = "SELECT i.enrollment_No,i.ISBN,i.Issue_Date,i.is_returned,b.book_name FROM issuebook i INNER join book b on i.ISBN=b.ISBN where  is_returned = 1";
+                MySqlDataAdapter returnedadapter = new MySqlDataAdapter(returnedQuery, con);
+                DataTable returnedDataTable = new DataTable();
+                returnedadapter.Fill(returnedDataTable);
+                dataGridView2.DataSource = returnedDataTable;
+
+
                 con.Close();
             }
             catch (Exception ex)
@@ -41,6 +49,28 @@ namespace LibraryManagementSystem
         private void closeBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
         }
     }
 }

@@ -153,6 +153,7 @@
             button2.TabIndex = 13;
             button2.Text = "Return Book";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // viewStudentInfoBtn
             // 

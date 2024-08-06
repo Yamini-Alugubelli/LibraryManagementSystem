@@ -33,6 +33,8 @@
             label2 = new Label();
             label1 = new Label();
             panel2 = new Panel();
+            button3 = new Button();
+            button2 = new Button();
             viewStudentInfoBtn = new Button();
             addStudentBtn = new Button();
             issueBookBtn = new Button();
@@ -41,8 +43,6 @@
             addBookBtn = new Button();
             label3 = new Label();
             label4 = new Label();
-            button3 = new Button();
-            button2 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel2.SuspendLayout();
@@ -105,6 +105,30 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(195, 417);
             panel2.TabIndex = 1;
+            // 
+            // button3
+            // 
+            button3.BackColor = SystemColors.GradientInactiveCaption;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button3.Location = new Point(12, 305);
+            button3.Name = "button3";
+            button3.Size = new Size(170, 55);
+            button3.TabIndex = 16;
+            button3.Text = "Complete Book Details";
+            button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = SystemColors.GradientInactiveCaption;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button2.Location = new Point(12, 256);
+            button2.Name = "button2";
+            button2.Size = new Size(170, 43);
+            button2.TabIndex = 15;
+            button2.Text = "Return Book";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // viewStudentInfoBtn
             // 
@@ -197,28 +221,6 @@
             label4.Size = new Size(139, 20);
             label4.TabIndex = 3;
             label4.Text = "Hi , Welcome Back ,";
-            // 
-            // button3
-            // 
-            button3.BackColor = SystemColors.GradientInactiveCaption;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.Location = new Point(12, 305);
-            button3.Name = "button3";
-            button3.Size = new Size(170, 55);
-            button3.TabIndex = 16;
-            button3.Text = "Complete Book Details";
-            button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            button2.BackColor = SystemColors.GradientInactiveCaption;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.Location = new Point(12, 256);
-            button2.Name = "button2";
-            button2.Size = new Size(170, 43);
-            button2.TabIndex = 15;
-            button2.Text = "Return Book";
-            button2.UseVisualStyleBackColor = false;
             // 
             // Home
             // 

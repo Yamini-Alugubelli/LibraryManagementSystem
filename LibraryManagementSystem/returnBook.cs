@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace LibraryManagementSystem
@@ -13,66 +14,13 @@ namespace LibraryManagementSystem
             InitializeComponent();
         }
 
-        private void returnButton_Click(object sender, EventArgs e)
-        {
-            int loanId;
-            if (int.TryParse(loanIdTextBox.Text, out loanId))
-            {
-                string condition = conditionTextBox.Text;
-                ReturnBook(loanId, condition);
-            }
-            else
-            {
-                MessageBox.Show("Please enter a valid Loan ID.");
-            }
-        }
 
-        private void ReturnBook(int loanId, string condition)
-        {
-            using (MySqlConnection conn = new MySqlConnection(con.ConnectionString))
-            {
-                try
-                {
-                    conn.Open();
 
-                    // Update the loan record to set it as returned
-                    string updateLoanQuery = "UPDATE issuebook SET is_returned = 1 WHERE IssueBookID = @loanId";
-                    using (MySqlCommand updateLoanCmd = new MySqlCommand(updateLoanQuery, conn))
-                    {
-                        updateLoanCmd.Parameters.AddWithValue("@loanId", loanId);
-                        updateLoanCmd.ExecuteNonQuery();
-                    }
 
-                    // Insert into the returns table
-                    string insertReturnQuery = "INSERT INTO returns (loan_id, return_date, `condition`) VALUES (@loanId, @returnDate, @condition)";
-                    using (MySqlCommand insertReturnCmd = new MySqlCommand(insertReturnQuery, conn))
-                    {
-                        insertReturnCmd.Parameters.AddWithValue("@loanId", loanId);
-                        insertReturnCmd.Parameters.AddWithValue("@returnDate", DateTime.Now);
-                        insertReturnCmd.Parameters.AddWithValue("@condition", condition);
-                        insertReturnCmd.ExecuteNonQuery();
-                    }
 
-                    MessageBox.Show("Book returned successfully.");
-                    ClearFields();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Error: " + ex.Message);
-                }
-            }
-        }
 
-        private void clearBtn_Click(object sender, EventArgs e)
-        {
-            ClearFields();
-        }
 
-        private void ClearFields()
-        {
-            loanIdTextBox.Clear();
-            conditionTextBox.Clear();
-        }
+
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
@@ -87,6 +35,91 @@ namespace LibraryManagementSystem
         private void exitBtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            home.Show();
+            this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string query = "SELECT * FROM issuebook i INNER join book b on i.ISBN=b.ISBN where enrollment_No = '" + textEnrollmentNumber.Text + "' and is_returned = 0";
+            MySqlDataAdapter adapter = new MySqlDataAdapter(query, con);
+            DataSet ds = new DataSet();
+            adapter.Fill(ds);
+            if (ds.Tables[0].Rows.Count != 0)
+            {
+                dataGridView1.DataSource = ds.Tables[0];
+            }
+            else
+            {
+                MessageBox.Show("Invalid ID or No Book Issued", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+            panel3.Visible = false;
+            
+        }
+
+
+        String BookName;
+        String BookDate;
+        Int64 rowId;
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            panel3.Visible = true;
+
+            if (dataGridView1.Rows[e.RowIndex].Cells[e.ColumnIndex].Value != null)
+            {
+                rowId = Int64.Parse(dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString());
+                BookName = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+                BookDate = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+            }
+            TextBookName.Text = BookName;
+            textBookIssueDate.Text = BookDate;
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            MySqlCommand cmd = new MySqlCommand();
+            cmd.Connection = con;
+            cmd.CommandText = "update issuebook set is_returned = 1 where enrollment_No = '" + textEnrollmentNumber.Text + "'";
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+            MessageBox.Show("Return Sucessfull", "Sucess", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            panel3_Paint(this, null);
+        }
+
+        private void textEnrollmentNumber_TextChanged(object sender, EventArgs e)
+        {
+            if(textEnrollmentNumber.Text != null)
+            {
+                panel3.Visible=false;
+                dataGridView1.DataSource = null;
+            }
         }
     }
 }

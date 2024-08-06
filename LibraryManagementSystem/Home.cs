@@ -64,5 +64,19 @@ namespace LibraryManagementSystem
             login.Show();
             this.Hide();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            returnBook returnbook = new returnBook();
+            returnbook.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            CompleteBookDetails CompleteBookDetails = new CompleteBookDetails();
+            CompleteBookDetails.Show();
+            this.Hide();
+        }
     }
 }

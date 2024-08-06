@@ -22,323 +22,444 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(returnBook));
-            this.cancelBtn = new System.Windows.Forms.Button();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.clearBtn = new System.Windows.Forms.Button();
-            this.returnButton = new System.Windows.Forms.Button();
-            this.conditionTextBox = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.loanIdTextBox = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.exitBtn = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.viewBookBtn = new System.Windows.Forms.Button();
-            this.issueBookBtn = new System.Windows.Forms.Button();
-            this.viewStudentInfoBtn = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.addStudentBtn = new System.Windows.Forms.Button();
-            this.returnBookBtn = new System.Windows.Forms.Button();
-            this.addBookBtn = new System.Windows.Forms.Button();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.SuspendLayout();
-            // 
-            // cancelBtn
-            // 
-            this.cancelBtn.BackColor = System.Drawing.Color.Crimson;
-            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cancelBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cancelBtn.Location = new System.Drawing.Point(394, 266);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(114, 36);
-            this.cancelBtn.TabIndex = 19;
-            this.cancelBtn.Text = "Cancel";
-            this.cancelBtn.UseVisualStyleBackColor = false;
-            this.cancelBtn.Click += new System.EventHandler(this.cancelBtn_Click);
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.cancelBtn);
-            this.panel4.Controls.Add(this.clearBtn);
-            this.panel4.Controls.Add(this.returnButton);
-            this.panel4.Controls.Add(this.conditionTextBox);
-            this.panel4.Controls.Add(this.label10);
-            this.panel4.Controls.Add(this.loanIdTextBox);
-            this.panel4.Controls.Add(this.label9);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(217, 100);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(559, 321);
-            this.panel4.TabIndex = 8;
-            // 
-            // clearBtn
-            // 
-            this.clearBtn.BackColor = System.Drawing.Color.Gray;
-            this.clearBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clearBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.clearBtn.Location = new System.Drawing.Point(219, 266);
-            this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(114, 36);
-            this.clearBtn.TabIndex = 18;
-            this.clearBtn.Text = "Clear";
-            this.clearBtn.UseVisualStyleBackColor = false;
-            this.clearBtn.Click += new System.EventHandler(this.clearBtn_Click);
-            // 
-            // returnButton
-            // 
-            this.returnButton.BackColor = System.Drawing.Color.SeaGreen;
-            this.returnButton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.returnButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.returnButton.Location = new System.Drawing.Point(55, 266);
-            this.returnButton.Name = "returnButton";
-            this.returnButton.Size = new System.Drawing.Size(114, 36);
-            this.returnButton.TabIndex = 17;
-            this.returnButton.Text = "Return Book";
-            this.returnButton.UseVisualStyleBackColor = false;
-            this.returnButton.Click += new System.EventHandler(this.returnButton_Click);
-            // 
-            // conditionTextBox
-            // 
-            this.conditionTextBox.Location = new System.Drawing.Point(149, 145);
-            this.conditionTextBox.Name = "conditionTextBox";
-            this.conditionTextBox.Size = new System.Drawing.Size(125, 27);
-            this.conditionTextBox.TabIndex = 14;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(19, 148);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 20);
-            this.label10.TabIndex = 13;
-            this.label10.Text = "Condition :";
-            // 
-            // loanIdTextBox
-            // 
-            this.loanIdTextBox.Location = new System.Drawing.Point(149, 98);
-            this.loanIdTextBox.Name = "loanIdTextBox";
-            this.loanIdTextBox.Size = new System.Drawing.Size(125, 27);
-            this.loanIdTextBox.TabIndex = 12;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(19, 101);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(69, 20);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Loan ID :";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(19, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 20);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Return Book Form";
+            label3 = new Label();
+            panel3 = new Panel();
+            exitBtn = new Button();
+            panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            label2 = new Label();
+            label1 = new Label();
+            viewBookBtn = new Button();
+            issueBookBtn = new Button();
+            viewStudentInfoBtn = new Button();
+            panel2 = new Panel();
+            button2 = new Button();
+            addBookBtn = new Button();
+            returnBookBtn = new Button();
+            addStudentBtn = new Button();
+            btnSerach = new Button();
+            textEnrollmentNumber = new TextBox();
+            label4 = new Label();
+            panel5 = new Panel();
+            btnRefresh = new Button();
+            btnOverdue = new Button();
+            btnCancel = new Button();
+            btnReturn = new Button();
+            dateBookReturnDate = new DateTimePicker();
+            label7 = new Label();
+            textBookIssueDate = new TextBox();
+            label6 = new Label();
+            TextBookName = new TextBox();
+            label5 = new Label();
+            panel7 = new Panel();
+            panel6 = new Panel();
+            dataGridView1 = new DataGridView();
+            panel3.SuspendLayout();
+            panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            panel5.SuspendLayout();
+            panel7.SuspendLayout();
+            panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            SuspendLayout();
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(15, 5);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(140, 20);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Return Book Details";
+            label3.AutoSize = true;
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(19, 6);
+            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Name = "label3";
+            label3.Size = new Size(167, 25);
+            label3.TabIndex = 0;
+            label3.Text = "Return Book Details";
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.Teal;
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(217, 62);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(559, 32);
-            this.panel3.TabIndex = 7;
+            panel3.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel3.BackColor = Color.Teal;
+            panel3.Controls.Add(label3);
+            panel3.Location = new Point(250, 58);
+            panel3.Margin = new Padding(4);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(751, 40);
+            panel3.TabIndex = 7;
+            panel3.Paint += panel3_Paint;
             // 
             // exitBtn
             // 
-            this.exitBtn.BackColor = System.Drawing.Color.AliceBlue;
-            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exitBtn.Location = new System.Drawing.Point(12, 358);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(170, 43);
-            this.exitBtn.TabIndex = 7;
-            this.exitBtn.Text = "Exit";
-            this.exitBtn.UseVisualStyleBackColor = false;
-            this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
+            exitBtn.BackColor = Color.AliceBlue;
+            exitBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            exitBtn.Location = new Point(15, 501);
+            exitBtn.Margin = new Padding(4);
+            exitBtn.Name = "exitBtn";
+            exitBtn.Size = new Size(212, 54);
+            exitBtn.TabIndex = 7;
+            exitBtn.Text = "Exit";
+            exitBtn.UseVisualStyleBackColor = false;
+            exitBtn.Click += exitBtn_Click;
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(0, -2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(801, 42);
-            this.panel1.TabIndex = 5;
+            panel1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            panel1.BackColor = Color.MidnightBlue;
+            panel1.Controls.Add(pictureBox1);
+            panel1.Controls.Add(label2);
+            panel1.Controls.Add(label1);
+            panel1.Location = new Point(0, -2);
+            panel1.Margin = new Padding(4);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(1001, 52);
+            panel1.TabIndex = 5;
+            panel1.Paint += panel1_Paint;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.InitialImage = null;
-            this.pictureBox1.Location = new System.Drawing.Point(743, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(33, 33);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            pictureBox1.BackgroundImage = (Image)resources.GetObject("pictureBox1.BackgroundImage");
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
+            pictureBox1.InitialImage = null;
+            pictureBox1.Location = new Point(929, 4);
+            pictureBox1.Margin = new Padding(4);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(41, 41);
+            pictureBox1.TabIndex = 2;
+            pictureBox1.TabStop = false;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(611, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(126, 20);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Welcome , Admin";
+            label2.AutoSize = true;
+            label2.ForeColor = SystemColors.ButtonHighlight;
+            label2.Location = new Point(764, 11);
+            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Name = "label2";
+            label2.Size = new Size(152, 25);
+            label2.TabIndex = 1;
+            label2.Text = "Welcome , Admin";
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(12, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Conestoga Library Management System";
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10.8F);
+            label1.ForeColor = SystemColors.ButtonHighlight;
+            label1.Location = new Point(15, 11);
+            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Name = "label1";
+            label1.Size = new Size(399, 30);
+            label1.TabIndex = 0;
+            label1.Text = "Conestoga Library Management System";
             // 
             // viewBookBtn
             // 
-            this.viewBookBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.viewBookBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.viewBookBtn.Location = new System.Drawing.Point(12, 59);
-            this.viewBookBtn.Name = "viewBookBtn";
-            this.viewBookBtn.Size = new System.Drawing.Size(170, 43);
-            this.viewBookBtn.TabIndex = 8;
-            this.viewBookBtn.Text = "View Books";
-            this.viewBookBtn.UseVisualStyleBackColor = false;
+            viewBookBtn.BackColor = SystemColors.GradientInactiveCaption;
+            viewBookBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            viewBookBtn.Location = new Point(15, 126);
+            viewBookBtn.Margin = new Padding(4);
+            viewBookBtn.Name = "viewBookBtn";
+            viewBookBtn.Size = new Size(212, 54);
+            viewBookBtn.TabIndex = 8;
+            viewBookBtn.Text = "View Books";
+            viewBookBtn.UseVisualStyleBackColor = false;
             // 
             // issueBookBtn
             // 
-            this.issueBookBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.issueBookBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.issueBookBtn.Location = new System.Drawing.Point(12, 108);
-            this.issueBookBtn.Name = "issueBookBtn";
-            this.issueBookBtn.Size = new System.Drawing.Size(170, 43);
-            this.issueBookBtn.TabIndex = 9;
-            this.issueBookBtn.Text = "Issue Books";
-            this.issueBookBtn.UseVisualStyleBackColor = false;
+            issueBookBtn.BackColor = SystemColors.GradientInactiveCaption;
+            issueBookBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            issueBookBtn.Location = new Point(15, 190);
+            issueBookBtn.Margin = new Padding(4);
+            issueBookBtn.Name = "issueBookBtn";
+            issueBookBtn.Size = new Size(212, 54);
+            issueBookBtn.TabIndex = 9;
+            issueBookBtn.Text = "Issue Books";
+            issueBookBtn.UseVisualStyleBackColor = false;
             // 
             // viewStudentInfoBtn
             // 
-            this.viewStudentInfoBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.viewStudentInfoBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.viewStudentInfoBtn.Location = new System.Drawing.Point(12, 202);
-            this.viewStudentInfoBtn.Name = "viewStudentInfoBtn";
-            this.viewStudentInfoBtn.Size = new System.Drawing.Size(170, 43);
-            this.viewStudentInfoBtn.TabIndex = 11;
-            this.viewStudentInfoBtn.Text = "View Student Info";
-            this.viewStudentInfoBtn.UseVisualStyleBackColor = false;
+            viewStudentInfoBtn.BackColor = SystemColors.GradientInactiveCaption;
+            viewStudentInfoBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            viewStudentInfoBtn.Location = new Point(15, 314);
+            viewStudentInfoBtn.Margin = new Padding(4);
+            viewStudentInfoBtn.Name = "viewStudentInfoBtn";
+            viewStudentInfoBtn.Size = new Size(212, 54);
+            viewStudentInfoBtn.TabIndex = 11;
+            viewStudentInfoBtn.Text = "View Student Info";
+            viewStudentInfoBtn.UseVisualStyleBackColor = false;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.panel2.Controls.Add(this.addBookBtn);
-            this.panel2.Controls.Add(this.returnBookBtn);
-            this.panel2.Controls.Add(this.viewStudentInfoBtn);
-            this.panel2.Controls.Add(this.addStudentBtn);
-            this.panel2.Controls.Add(this.issueBookBtn);
-            this.panel2.Controls.Add(this.viewBookBtn);
-            this.panel2.Controls.Add(this.exitBtn);
-            this.panel2.Location = new System.Drawing.Point(0, 35);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(195, 417);
-            this.panel2.TabIndex = 6;
+            panel2.BackColor = SystemColors.GradientInactiveCaption;
+            panel2.Controls.Add(button2);
+            panel2.Controls.Add(addBookBtn);
+            panel2.Controls.Add(returnBookBtn);
+            panel2.Controls.Add(viewStudentInfoBtn);
+            panel2.Controls.Add(addStudentBtn);
+            panel2.Controls.Add(issueBookBtn);
+            panel2.Controls.Add(viewBookBtn);
+            panel2.Controls.Add(exitBtn);
+            panel2.Dock = DockStyle.Fill;
+            panel2.Location = new Point(0, 0);
+            panel2.Margin = new Padding(4);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(1000, 562);
+            panel2.TabIndex = 6;
             // 
-            // addStudentBtn
+            // button2
             // 
-            this.addStudentBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.addStudentBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.addStudentBtn.Location = new System.Drawing.Point(12, 155);
-            this.addStudentBtn.Name = "addStudentBtn";
-            this.addStudentBtn.Size = new System.Drawing.Size(170, 43);
-            this.addStudentBtn.TabIndex = 10;
-            this.addStudentBtn.Text = "Add Students";
-            this.addStudentBtn.UseVisualStyleBackColor = false;
-            // 
-            // returnBookBtn
-            // 
-            this.returnBookBtn.BackColor = System.Drawing.Color.SteelBlue;
-            this.returnBookBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.returnBookBtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.returnBookBtn.Location = new System.Drawing.Point(12, 248);
-            this.returnBookBtn.Name = "returnBookBtn";
-            this.returnBookBtn.Size = new System.Drawing.Size(170, 43);
-            this.returnBookBtn.TabIndex = 16;
-            this.returnBookBtn.Text = "Return Books";
-            this.returnBookBtn.UseVisualStyleBackColor = false;
+            button2.BackColor = SystemColors.GradientInactiveCaption;
+            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            button2.Location = new Point(15, 440);
+            button2.Margin = new Padding(4);
+            button2.Name = "button2";
+            button2.Size = new Size(212, 54);
+            button2.TabIndex = 18;
+            button2.Text = "CompleteBookDetails";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // addBookBtn
             // 
-            this.addBookBtn.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.addBookBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.addBookBtn.Location = new System.Drawing.Point(12, 9);
-            this.addBookBtn.Name = "addBookBtn";
-            this.addBookBtn.Size = new System.Drawing.Size(170, 43);
-            this.addBookBtn.TabIndex = 17;
-            this.addBookBtn.Text = "Add Books";
-            this.addBookBtn.UseVisualStyleBackColor = false;
-            this.addBookBtn.Click += new System.EventHandler(this.addBookBtn_Click);
+            addBookBtn.BackColor = SystemColors.GradientInactiveCaption;
+            addBookBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            addBookBtn.Location = new Point(15, 65);
+            addBookBtn.Margin = new Padding(4);
+            addBookBtn.Name = "addBookBtn";
+            addBookBtn.Size = new Size(212, 54);
+            addBookBtn.TabIndex = 17;
+            addBookBtn.Text = "Add Books";
+            addBookBtn.UseVisualStyleBackColor = false;
+            addBookBtn.Click += addBookBtn_Click;
+            // 
+            // returnBookBtn
+            // 
+            returnBookBtn.BackColor = Color.SteelBlue;
+            returnBookBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            returnBookBtn.ForeColor = SystemColors.ButtonHighlight;
+            returnBookBtn.Location = new Point(15, 375);
+            returnBookBtn.Margin = new Padding(4);
+            returnBookBtn.Name = "returnBookBtn";
+            returnBookBtn.Size = new Size(212, 54);
+            returnBookBtn.TabIndex = 16;
+            returnBookBtn.Text = "Return Books";
+            returnBookBtn.UseVisualStyleBackColor = false;
+            // 
+            // addStudentBtn
+            // 
+            addStudentBtn.BackColor = SystemColors.GradientInactiveCaption;
+            addStudentBtn.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            addStudentBtn.Location = new Point(15, 250);
+            addStudentBtn.Margin = new Padding(4);
+            addStudentBtn.Name = "addStudentBtn";
+            addStudentBtn.Size = new Size(212, 54);
+            addStudentBtn.TabIndex = 10;
+            addStudentBtn.Text = "Add Students";
+            addStudentBtn.UseVisualStyleBackColor = false;
+            // 
+            // btnSerach
+            // 
+            btnSerach.Location = new Point(19, 146);
+            btnSerach.Margin = new Padding(2);
+            btnSerach.Name = "btnSerach";
+            btnSerach.Size = new Size(109, 39);
+            btnSerach.TabIndex = 2;
+            btnSerach.Text = "Search";
+            btnSerach.UseVisualStyleBackColor = true;
+            btnSerach.Click += button1_Click;
+            // 
+            // textEnrollmentNumber
+            // 
+            textEnrollmentNumber.Location = new Point(19, 96);
+            textEnrollmentNumber.Margin = new Padding(2);
+            textEnrollmentNumber.Name = "textEnrollmentNumber";
+            textEnrollmentNumber.Size = new Size(242, 31);
+            textEnrollmentNumber.TabIndex = 1;
+            textEnrollmentNumber.TextChanged += textEnrollmentNumber_TextChanged;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(58, 51);
+            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Name = "label4";
+            label4.Size = new Size(167, 25);
+            label4.TabIndex = 0;
+            label4.Text = "Enrollment Number";
+            label4.Click += label4_Click;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(btnRefresh);
+            panel5.Controls.Add(btnSerach);
+            panel5.Controls.Add(textEnrollmentNumber);
+            panel5.Controls.Add(label4);
+            panel5.Location = new Point(250, 104);
+            panel5.Margin = new Padding(2);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(306, 245);
+            panel5.TabIndex = 8;
+            // 
+            // btnRefresh
+            // 
+            btnRefresh.Location = new Point(152, 146);
+            btnRefresh.Margin = new Padding(2);
+            btnRefresh.Name = "btnRefresh";
+            btnRefresh.Size = new Size(109, 39);
+            btnRefresh.TabIndex = 3;
+            btnRefresh.Text = "Refresh";
+            btnRefresh.UseVisualStyleBackColor = true;
+            // 
+            // btnOverdue
+            // 
+            btnOverdue.Location = new Point(559, 80);
+            btnOverdue.Margin = new Padding(2);
+            btnOverdue.Name = "btnOverdue";
+            btnOverdue.Size = new Size(112, 34);
+            btnOverdue.TabIndex = 8;
+            btnOverdue.Text = "Overdue";
+            btnOverdue.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            btnCancel.Location = new Point(559, 124);
+            btnCancel.Margin = new Padding(2);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(112, 34);
+            btnCancel.TabIndex = 7;
+            btnCancel.Text = "Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += button5_Click;
+            // 
+            // btnReturn
+            // 
+            btnReturn.Location = new Point(559, 26);
+            btnReturn.Margin = new Padding(2);
+            btnReturn.Name = "btnReturn";
+            btnReturn.Size = new Size(112, 34);
+            btnReturn.TabIndex = 6;
+            btnReturn.Text = "Return";
+            btnReturn.UseVisualStyleBackColor = true;
+            btnReturn.Click += btnReturn_Click;
+            // 
+            // dateBookReturnDate
+            // 
+            dateBookReturnDate.Location = new Point(198, 126);
+            dateBookReturnDate.Margin = new Padding(2);
+            dateBookReturnDate.Name = "dateBookReturnDate";
+            dateBookReturnDate.Size = new Size(300, 31);
+            dateBookReturnDate.TabIndex = 5;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(18, 132);
+            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Name = "label7";
+            label7.Size = new Size(151, 25);
+            label7.TabIndex = 4;
+            label7.Text = "Book Return Date";
+            // 
+            // textBookIssueDate
+            // 
+            textBookIssueDate.Location = new Point(198, 78);
+            textBookIssueDate.Margin = new Padding(2);
+            textBookIssueDate.Name = "textBookIssueDate";
+            textBookIssueDate.Size = new Size(225, 31);
+            textBookIssueDate.TabIndex = 3;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(18, 86);
+            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(140, 25);
+            label6.TabIndex = 2;
+            label6.Text = "Book Issue Date";
+            // 
+            // TextBookName
+            // 
+            TextBookName.Location = new Point(198, 26);
+            TextBookName.Margin = new Padding(2);
+            TextBookName.Name = "TextBookName";
+            TextBookName.Size = new Size(225, 31);
+            TextBookName.TabIndex = 1;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(19, 35);
+            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Name = "label5";
+            label5.Size = new Size(105, 25);
+            label5.TabIndex = 0;
+            label5.Text = "Book Name";
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(btnOverdue);
+            panel7.Controls.Add(btnCancel);
+            panel7.Controls.Add(btnReturn);
+            panel7.Controls.Add(dateBookReturnDate);
+            panel7.Controls.Add(label7);
+            panel7.Controls.Add(textBookIssueDate);
+            panel7.Controls.Add(label6);
+            panel7.Controls.Add(TextBookName);
+            panel7.Controls.Add(label5);
+            panel7.Location = new Point(250, 354);
+            panel7.Margin = new Padding(2);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(751, 211);
+            panel7.TabIndex = 9;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(dataGridView1);
+            panel6.Location = new Point(561, 104);
+            panel6.Margin = new Padding(2);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(440, 245);
+            panel6.TabIndex = 10;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(3, 2);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 62;
+            dataGridView1.Size = new Size(437, 244);
+            dataGridView1.TabIndex = 0;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             // 
             // returnBook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panel2);
-            this.Name = "returnBook";
-            this.Text = "Return Book";
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.ResumeLayout(false);
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1000, 562);
+            Controls.Add(panel6);
+            Controls.Add(panel7);
+            Controls.Add(panel5);
+            Controls.Add(panel3);
+            Controls.Add(panel1);
+            Controls.Add(panel2);
+            Margin = new Padding(4);
+            Name = "returnBook";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Return Book";
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel1.ResumeLayout(false);
+            panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ResumeLayout(false);
         }
 
         #endregion
-
-        private System.Windows.Forms.Button cancelBtn;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button clearBtn;
-        private System.Windows.Forms.Button returnButton;
-        private System.Windows.Forms.TextBox conditionTextBox;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox loanIdTextBox;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button exitBtn;
@@ -353,5 +474,23 @@
         private System.Windows.Forms.Button addStudentBtn;
         private System.Windows.Forms.Button returnBookBtn;
         private System.Windows.Forms.Button addBookBtn;
+        private Button btnSerach;
+        private TextBox textEnrollmentNumber;
+        private Label label4;
+        private Panel panel5;
+        private Button btnOverdue;
+        private Button btnCancel;
+        private Button btnReturn;
+        private DateTimePicker dateBookReturnDate;
+        private Label label7;
+        private TextBox textBookIssueDate;
+        private Label label6;
+        private TextBox TextBookName;
+        private Label label5;
+        private Panel panel7;
+        private Panel panel6;
+        private Button button2;
+        private Button btnRefresh;
+        private DataGridView dataGridView1;
     }
 }
